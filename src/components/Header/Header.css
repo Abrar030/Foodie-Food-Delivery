@@ -1,0 +1,123 @@
+.header {
+  background: url('../../../public/YUM.png') no-repeat center center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 50px; /* Adjust left padding */
+}
+
+.header-content {
+  max-width: 600px; /* Prevents text from stretching */
+  width: 100%;
+  animation: fadeIn 2s ease-in-out;
+  text-align: left;
+}
+
+.header h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 20px;
+  max-width: 100%; /* Ensures h1 does not overflow */
+}
+
+.header p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  max-width: 100%; /* Prevents text from extending too far */
+}
+
+.header button {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.header button:hover {
+  background-color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 1050px) {
+  .header {
+      height: auto;
+      padding: 40px 30px;
+  }
+
+  .header-content {
+      max-width: 500px; /* Adjust content width for smaller screens */
+  }
+
+  .header h1 {
+      font-size: 3rem;
+  }
+
+  .header p {
+      font-size: 1.1rem;
+  }
+
+  .header button {
+      font-size: 1rem;
+      padding: 10px 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+      height: auto;
+      padding: 30px 20px;
+  }
+
+  .header-content {
+      max-width: 90%;
+  }
+
+  .header h1 {
+      font-size: 2.5rem;
+  }
+
+  .header p {
+      font-size: 1rem;
+  }
+
+  .header button {
+      font-size: 0.9rem;
+      padding: 8px 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+      height: auto;
+      padding: 20px 15px;
+  }
+
+  .header-content {
+      max-width: 100%;
+  }
+
+  .header h1 {
+      font-size: 2rem;
+  }
+
+  .header p {
+      font-size: 0.7rem;
+      
+      
+  }
+
+  .header button {
+      font-size: 0.85rem;
+      padding: 7px 15px;
+  }
+}
